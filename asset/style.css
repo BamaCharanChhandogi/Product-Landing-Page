@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-size: 700px;
+    line-height: 12px;
+    color: #222;
+}
+p{
+   font-size: 16px;
+   color: #465b52; 
+   margin: 15px 0 20px 0;
+}
+.section-m1{
+margin: 40px 0;
+}
+body{
+    width: 100%;
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+/* header */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E3E6F3;
+    background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.06); */
+    /* box-shadow: 0px 0px 25px #6dd5ed,
+    0px 0px 30px #6dd5ed,0px 0px 50px #6dd5ed,0px 0px 100px #6dd5ed; */
+padding: 20px 80px;
+border-radius: 20px;
+margin: 20px 50px 0 50px;
+
+
+}
+#header a .logo{
+    width: 60px;
+    height: auto;
+}
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #465b52;
+}
