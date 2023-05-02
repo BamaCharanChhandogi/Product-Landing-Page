@@ -20,9 +20,8 @@ h4 {
   color: #222;
 }
 h6 {
-  font-size: 700px;
-  line-height: 12px;
-  color: #222;
+  font-weight: 700;
+  font-size: 12px;
 }
 p {
   font-size: 16px;
@@ -46,20 +45,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #3ed5f7 !important;
-  background: linear-gradient(
-    to right,
-    #f64f59,
-    #c471ed,
-    #12c2e9
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* box-shadow: 0 5px 15px rgba(0,0,0,0.06); */
-  /* box-shadow: 0px 0px 25px #6dd5ed,
-    0px 0px 30px #6dd5ed,0px 0px 50px #6dd5ed,0px 0px 100px #6dd5ed; */
+  background: #E3E6F3;
   padding: 10px 80px;
-  border-radius: 20px;
-  margin: 10px 10px 0 10px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  z-index:1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  /* margin: 10px 10px 0 10px; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
 #header a .logo {
   width: 70px;
@@ -106,10 +100,9 @@ body {
 #main {
   background-image: url("img/hero4.png");
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   padding: 0 80px;
   display: flex;
-  margin-top: 5px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -127,20 +120,118 @@ body {
   text-align: justify;
 }
 #main button{
- background-color: #6dd5ed;
+ background-color: #e01287;
   margin-top:10px;
-  font-size: 24px;
+  font-size: 25px;
+  padding: 2px;
   width: 70px;
   height: 50px;
   border-radius: 10px;
   cursor: pointer;
-  font-weight: 300;
+  font-weight: 500;
   border: none;
 }
 #main button:hover{
-  background-color: #12c2e9;
-  box-shadow: 0px 0px 25px #6dd5ed,
-    0px 0px 30px #6dd5ed,0px 0px 50px #6dd5ed,0px 0px 100px #6dd5ed;
-    transition: 0.5s ease;
+  box-shadow: 0px 0px 25px #e01287,
+    0px 0px 30px #e01287,0px 0px 50px #e01287,0px 0px 100px #e01287;
+    transition: 1.5s ease;
 
+}
+/* feature Section */
+#feature{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:40px 60px;
+}
+#feature h6{
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  color: #e01287;
+  border-radius: 5px;
+  padding: 9px 8px 4px 5px;
+  background-color: #fddde4;
+}
+#feature .fe-box{
+  width: 180px;
+  padding: 25px 15px;
+  margin: 15px 0px;
+  text-align: center;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0,0.03);
+  border: 1px solid #e01287;
+  border-radius: 4px;
+}
+#feature .fe-box img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+#feature .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img:hover{
+  width: 150px;
+  cursor: pointer;
+}
+#feature .fe-box:nth-child(2) h6{
+  background-color:#cdebbc
+}
+#feature .fe-box:nth-child(3) h6{
+  background-color:#d1e8f2
+}
+#feature .fe-box:nth-child(4) h6{
+  background-color:#cdd4f8
+}
+#feature .fe-box:nth-child(5) h6{
+  background-color:#f6dbf6
+}
+#feature .fe-box:nth-child(6) h6{
+  background-color:#fff2e5
+}
+
+/* Products */
+
+#products{
+  text-align: center;
+}
+
+#products .pro img{
+  width: 73%;
+  border-radius: 50%;
+}
+#products .pro{
+  position: relative;
+  width: 23%;
+}
+#products .pro-container{
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#products .dis{
+  padding: 10px 10px;
+  display: inline-block;
+}
+#products .dis span{
+  padding: 5px 0px;
+}
+#products .dis h5{
+  padding: 7px 0px;
+}
+#products .dis h2{
+  font-size: 35px;
+  text-align: left;
+}
+#products .star{
+  padding: 5px;
+  color: #e8d50bae
+}
+.pro-container a{
+  position: absolute;
+  top: 84%;
+  left: 58%;
+  padding: 5px;
+  font-size: 25px;
 }
