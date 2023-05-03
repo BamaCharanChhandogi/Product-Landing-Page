@@ -197,41 +197,58 @@ body {
 }
 
 #products .pro img{
-  width: 73%;
+  width: 100%;
   border-radius: 50%;
 }
 #products .pro{
   position: relative;
   width: 23%;
+  min-width: 250px ;
+  padding: 10px 12px;
+  margin: 15px 0;
+  border-radius: 10px;
+  /* border: 1px solid #cce7d0; */
+  box-shadow: 20px 20px 30px rgba(0, 0, 0,0.02);
+}
+#products .pro:hover{
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0,0.08);
 }
 #products .pro-container{
   display: flex;
-  padding: 20px;
-  justify-content: center;
+  padding-top: 20px;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-#products .dis{
-  padding: 10px 10px;
-  display: inline-block;
+#products .pro .dis{
+  padding: 10px 0px;
+  text-align: start;
 }
-#products .dis span{
-  padding: 5px 0px;
+#products .pro .dis span{
+  font-size: 12px;
+  color: #606063;
 }
-#products .dis h5{
-  padding: 7px 0px;
+#products .pro .dis h5{
+  color: #1a1a1a;
+  padding-top: 7px;
+  font-size: 14px;
 }
-#products .dis h2{
-  font-size: 35px;
-  text-align: left;
+#products .pro .dis h4{
+  font-size: 15px;
+  padding-top: 7px;
+  font-weight: 700;
 }
 #products .star{
-  padding: 5px;
+  font-size: 15px;
   color: #e8d50bae
 }
 .pro-container a{
+  font-weight: 500;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 84%;
-  left: 58%;
+  bottom: 20px;
+  right: 10px;
   padding: 5px;
   font-size: 25px;
 }
