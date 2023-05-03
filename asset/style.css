@@ -230,22 +230,24 @@ body {
 }
 #products .pro .dis h5{
   color: #1a1a1a;
-  padding-top: 7px;
+  padding: 4px 0px;
   font-size: 14px;
 }
 #products .pro .dis h4{
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 7px;
   font-weight: 700;
 }
 #products .star{
+  padding: 3px;
   font-size: 15px;
   color: #e8d50bae
 }
 .pro-container a{
+  color: #e01287;
   font-weight: 500;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   position: absolute;
   bottom: 20px;
   right: 10px;
