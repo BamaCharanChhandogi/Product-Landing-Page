@@ -11,15 +11,21 @@
 <body>
 <section id="header" >
         <a href=""><img src="asset/img/pngtree-beauty-spa-logo-design-template-woman-silhouette-logo-template-image_328588.jpg" alt="" class="logo"></a>
-    <div>
+    <nav id="nav">
         <ul id="navbar">
-            <li><a href="#main" class="active">Home</a></ li>
-            <li><a href="#products">Product</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="#main" id="home" class="active">Home</a></ li>
+            <li><a href="#products" id="product">Product</a></li>
+            <li><a href="#Contact" id="contact">Contact</a></li>
+            <li><a href="Cart.html" id="cart"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
+    </nav>
+    <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 </section>
+
 <section id="main">
     <h4>One less trip </h4>
     <h2>Super Value deals</h2>
@@ -182,8 +188,9 @@
 
     </div>
 </section>
-<section id="contact">
+<section id="Contact">
     <div class="contact-page">
+        <h2>Our Contact Page</h2>
         <div class="info">
             <div class="box">
                 <i class="fa-solid fa-location-dot"></i>
@@ -208,7 +215,7 @@
         </div>
         <div class="form">
             <h1>Contact us</h1>
-            <input type="text" placeholder="enter Your Name">
+            <input type="text" placeholder="Enter Your Name">
             <input type="email" placeholder="Enter Your Email">
             <input type="submit">
 
