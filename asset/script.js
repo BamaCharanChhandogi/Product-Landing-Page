@@ -21,3 +21,15 @@ window.addEventListener('scroll',function(){
         document.getElementById('home').classList.add('active');
     }
 });
+
+// button working
+let value=document.getElementById('value');
+let count=0;
+let button=document.querySelectorAll('.btnShop');
+button.forEach(btnShop =>{
+    btnShop.addEventListener('click',function(){
+        count=count+1; 
+        btnShop.setAttribute('style','color:green;');
+    });
+});
+//update on shopping page

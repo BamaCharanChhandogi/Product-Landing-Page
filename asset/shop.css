@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  box-sizing: border-box;
+}
+body{
+    background-color: #e3e6f3;
+    background-image: url(img/NicePng_girl-transparent-png_3857790.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  width: 58%;
+  padding: 20px;
+  /* margin: 0px auto; */
+}
+
+#cart-items {
+  margin-bottom: 20px;
+}
+
+#total-price {
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#checkout-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 90px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.cart-item .item-details {
+  flex-grow: 1;
+}
+
+.cart-item .item-price {
+  font-weight: bold;
+}
