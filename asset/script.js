@@ -1,17 +1,26 @@
-let btn=document.getElementsByClassName('toggle-btn');
-document.addEventListener('click',function(){
-    let navbar=document.getElementById('navbar');
-    navbar.classList.toggle('active');
-});
+let btn=document.getElementById('bar');
+let navbar=document.getElementById('navbar');
+let close=document.getElementById('close');
+if(btn){
+    btn.addEventListener('click',()=>{
+        navbar.classList.add('active');
+        document.getElementById('close').style.display="block";
+    });
+}
+if(close){
+    close.addEventListener('click',()=>{
+        navbar.classList.remove('active');
+    });
+}
 //
 window.addEventListener('scroll',function(){
-    if(window.pageYOffset>=820 && window.pageYOffset <= 1700){
+    if(window.pageYOffset>=820 && window.pageYOffset <= 3500){
         document.getElementById('product').classList.add('active');
         document.getElementById('home').classList.remove('active');
-        document.getElementById('contact').classList.remove('active');
+        document.getElementById('about').classList.remove('active');
     }
-    else if(window.pageYOffset>1700){
-        document.getElementById('contact').classList.add('active');
+    else if(window.pageYOffset>3500){
+        document.getElementById('about').classList.add('active');
         document.getElementById('product').classList.remove('active');
         document.getElementById('home').classList.remove('active');
     }
