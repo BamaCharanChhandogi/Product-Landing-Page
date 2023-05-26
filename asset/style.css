@@ -598,10 +598,61 @@ body {
   cursor: pointer;
 }
 
-/* ..................Contact Page..............................
+
+/* .................Shopping Page..................
+...................................................
+................................................... */
+
+#page-header {
+  width: 100%;
+  height: 40vh;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+#page-header.about-header-s{
+  background-image: url(img/banner/b1.jpg);
+}
+#page-header h2,
+#page-header p {
+  font-size: 2rem;
+  color: #cdd4f8;
+}
+
+#pagination{
+  text-align: center;
+}
+#pagination a{
+  text-decoration: none;
+  background-color: #c03383;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+#pagination a:hover{
+  background-color: #f30d8f;
+}
+#pagination a i{
+  font-size: 20px;
+}
+#pagination a i:hover{
+  background-color: #ed0d8c;
+}
+
+
+
+/* ..................Contact Page...........................
 ............................................................
-...........................................................
+............................................................
  */
+
+ #page-header.about-header-c{
+  background-image: url(img/banner/b2.jpg);
+ }
  #contact-details {
   display: flex;
   align-items: center;
@@ -650,22 +701,7 @@ body {
   height: 100%;
 }
 
-#page-header {
-  background-image: url(img/banner/b1.jpg);
-  width: 100%;
-  height: 40vh;
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-}
-#page-header h2,
-#page-header p {
-  font-size: 2rem;
-  color: #cdd4f8;
-}
+
 
 /* form */
 #form-details{
