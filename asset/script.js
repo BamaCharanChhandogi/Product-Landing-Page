@@ -10,26 +10,27 @@ if(btn){
 if(close){
     close.addEventListener('click',()=>{
         navbar.classList.remove('active');
+        document.getElementById('close').style.display="none";
     });
 }
 //
-window.addEventListener('scroll',function(){
-    if(window.pageYOffset>=820 && window.pageYOffset <= 3500){
-        document.getElementById('product').classList.add('active');
-        document.getElementById('home').classList.remove('active');
-        document.getElementById('about').classList.remove('active');
-    }
-    else if(window.pageYOffset>3500){
-        document.getElementById('about').classList.add('active');
-        document.getElementById('product').classList.remove('active');
-        document.getElementById('home').classList.remove('active');
-    }
-    else{
-        document.getElementById('product').classList.remove('active');
-        document.getElementById('home').classList.remove('active');
-        document.getElementById('home').classList.add('active');
-    }
-});
+// window.addEventListener('scroll',function(){
+//     if(window.pageYOffset>=820 && window.pageYOffset <= 3500){
+//         document.getElementById('product').classList.add('active');
+//         document.getElementById('home').classList.remove('active');
+//         document.getElementById('about').classList.remove('active');
+//     }
+//     else if(window.pageYOffset>3500){
+//         document.getElementById('about').classList.add('active');
+//         document.getElementById('product').classList.remove('active');
+//         document.getElementById('home').classList.remove('active');
+//     }
+//     else{
+//         document.getElementById('product').classList.remove('active');
+//         document.getElementById('home').classList.remove('active');
+//         document.getElementById('home').classList.add('active');
+//     }
+// });
 
 // button working
 let value=document.getElementById('value');

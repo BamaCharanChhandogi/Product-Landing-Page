@@ -575,16 +575,18 @@ body {
 }
 #footer .box {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   text-align: center;
 }
 #footer .box .box-1 {
+  width: 40%;
   border: 2px solid #c03383;
   padding: 0.3rem;
   margin: 0px 0.2rem;
   border-radius: 4px;
 }
 #footer .box .box-2 {
+  width: 40%;
   border: 2px solid #c03383;
   padding: 0.3rem;
   margin: 0px 0.2rem;
@@ -596,10 +598,161 @@ body {
   cursor: pointer;
 }
 
-/* ......Media Query 
+/* ..................Contact Page..............................
+............................................................
+...........................................................
+ */
+ #contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#contact-details .details {
+  width: 40%;
+}
+#contact-details .details span {
+  font-size: 32px;
+  color: #c03383;
+  font-weight: bold;
+}
+#contact-details .details h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+#contact-details .details li{
+  list-style: none;
+  padding: 10px 0;
+  display: flex;
+}
+#contact-details .details li i{
+  font-size:14px ;
+  padding-right: 22PX;
+}
+#contact-details .details li P{
+  font-size: 24px;
+  margin: 0;
+}
+/* map */
+#contact-details .map {
+  width: 55%;
+  height: 440px;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+}
+#contact-details .map iframe{
+  padding: 4px;
+  width: 100%;
+  height: 100%;
+}
 
-            ..........*/
-@media (max-width: 799px) {
+#page-header {
+  background-image: url(img/banner/b1.jpg);
+  width: 100%;
+  height: 40vh;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+#page-header h2,
+#page-header p {
+  font-size: 2rem;
+  color: #cdd4f8;
+}
+
+/* form */
+#form-details{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 90px;
+  border: 1px solid #e1e1e1;
+}
+#form-details form{
+width: 65%;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+}
+#form-details form span{
+  font-size: 32px;
+  color: #c03383;
+  font-weight: bold;
+}
+#form-details form h2{
+  font-size: 20px;
+}
+#form-details form input,
+#form-details form textarea{
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+  resize: none;
+}
+#form-details form button{
+  width: 80px;
+  height: 40px;
+  color: white;
+  background-color: #088178;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* people */
+#form-details .people{
+  display: flex;
+  flex-direction: column;
+
+}
+#form-details .people div{
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 25px;
+}
+#form-details .people img{
+border-radius: 50%;
+width: 65px;
+height: 65px;
+object-fit: cover;
+margin-right: 15px;
+}
+#form-details .people div p{
+  margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+
+}
+#form-details .people div span{
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* ...........Cart.........
+...........................
+............................ */
+
+
+
+
+/* .....................
+
+**  Media Query ** 
+
+................................. */
+ @media (max-width: 799px) {
   .section-p1 {
     padding: 40px 40px;
   }
@@ -702,6 +855,24 @@ body {
   #footer .payment {
     margin: 0 auto;
   }
+  /* ......Contact page..... */
+  /* Form section */
+  #form-details{
+    padding: 40px;
+  }
+  #form-details form{
+    width: 50%;
+  }
+  #contact-details .details{
+    width: 30%;
+    margin: 0;
+  }
+  #contact-details .details li span{
+    text-align: justify;
+  }
+  #contact-details .details li P{
+    width: 50%;
+  }
 }
 
 /*  Media Query For Mobile*/
@@ -766,7 +937,7 @@ body {
     flex-direction: column;
   }
   .col h4 {
-    text-decoration:solid;
+    text-decoration: solid;
   }
   #footer .box {
     justify-content: space-between;
@@ -777,4 +948,28 @@ body {
   #footer .box-2 {
     width: 40%;
   }
+  /* Contact Details */
+  #contact-details {
+    flex-direction: column;
+  }
+  #contact-details .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #contact-details .map{
+    width: 100%;
+    height: 50vh;
+  }
+  /* form */
+  #form-details{
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+  #form-details form{
+    width: 100%;
+    margin-bottom: 30px;
+}
+#form-details .people span{
+  margin: 0;
 }
