@@ -642,8 +642,107 @@ body {
 #pagination a i:hover{
   background-color: #ed0d8c;
 }
+#product-1 .pro{
+  cursor: pointer;
+}
 
-
+/* ....SubProducts page... */
+/* Single Products */
+#product-details{
+display: flex;
+margin-top: 20px;
+}
+#product-details .single-pro-img{
+  width: 30%;
+  margin-right: 80px;
+  margin-left: 50px;
+}
+#product-details .single-pro-img img{
+  border-radius: 10px;
+}
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+/* Details */
+#product-details .single-pro-details{
+  width: 25%;
+  padding: 30px 0px;
+}
+#product-details .single-pro-details h4{
+padding: 20px 0 0px 0;
+}
+#product-details .single-pro-details h2{
+font-size: 20px;
+}
+#product-details .single-pro-details select{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+#product-details .single-pro-details input{
+  width: 44px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#product-details .single-pro-details input:focus{
+  outline: none;
+}
+#product-details .single-pro-details button{
+  width: 90px;
+  height: 40px;
+  padding: 2px 4px;
+  background-color: #f43fa5;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+#product-details .single-pro-details button:hover{
+  background-color: #f30f90;
+}
+#product-details .single-pro-details p{
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+#product-details #sm-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 35px;
+  /* height: 10vh; */
+  /* margin-right: 20px; */
+}
+#product-details .banner-box{
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/banner/b18.jpg);
+  align-items: flex-start;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  min-width: 380px;
+  height: 35vh;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#product-details  .box2{
+margin-top: 24px;
+background-image: url(img/banner/b16.jpg);
+}
+#product-details select{
+  font-size: 17px;
+}
 
 /* ..................Contact Page...........................
 ............................................................
