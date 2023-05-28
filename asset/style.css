@@ -115,6 +115,27 @@ body {
 #close {
   display: none;
 }
+/* cart Item on Toogle button */
+#navbar #cart-item{
+  display: none;
+}
+#navbar li span{
+  position: absolute;
+  text-align: center;
+  /* display: block; */
+  /* font-size: 18px; */
+  font-weight: 700;
+  line-height: 1.8;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgb(249, 247, 247);
+  background-color: #ee0983;
+  color: #0b0a0a;
+  border-radius: 50%;
+  top: -12px;
+  right: 0;
+  /* padding-top: 7px; */
+}
 /* Hero */
 #main {
   background-image: url("img/hero4.png");
@@ -895,6 +916,9 @@ margin-right: 15px;
   width: 100px;
   text-align: center;
 }
+#cart #nth1{
+  /* display: none; */
+}
 #cart table td:nth-child(2){
   width: 150px;
   text-align: center;
@@ -993,7 +1017,14 @@ margin-right: 15px;
   border: 1px solid #e1e1e1;
 
 }
-
+.total #sp-coupon{
+  display: none;
+}
+.total #sp-coupon span{
+  color: #131313;
+  font-weight: 600;
+  font-size: 15px;
+}
 .total button{
   background-color: #fe0793;
   /* margin-top: 10px; */

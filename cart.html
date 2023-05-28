@@ -59,38 +59,38 @@
                 </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr id="nth1">
                 <td>
-                  <a href=""><i class="far fa-times-circle"></i></a>
+                  <a style="cursor: pointer;" onclick="nth1()" id="close-btn1"><i class="far fa-times-circle"></i></a>
               
                 </td>
                 <td><img src="asset/img/products/f1.jpg" alt=""></td>
                 <td>Cotton Best T-shirts</td>
-                <td>$101</td>
-                <td><input type="number" value="1" id=""></td>
-                <td>$101</td>
+                <td>599</td>
+                <td><input type="number" value="1" id="productN1"></td>
+                <td id="update1">599</td>
               </tr>
-              <tr>
+              <tr id="nth2">
                 <td>
-                  <a href=""><i class="far fa-times-circle"></i></a>
+                  <a style="cursor: pointer;" onclick="nth2()" id="close-btn2"><i class="far fa-times-circle"></i></a>
               
                 </td>
                 <td><img src="asset/img/products/f2.jpg" alt=""></td>
                 <td>Cotton Best T-shirts</td>
-                <td>$101</td>
-                <td><input type="number" value="1" id=""></td>
-                <td>$101</td>
+                <td>399</td>
+                <td><input type="number" value="1" id="productN2"></td>
+                <td id="update2">399</td>
               </tr>
-              <tr>
+              <tr id="nth3">
                 <td>
-                  <a href=""><i class="far fa-times-circle"></i></a>
+                  <a style="cursor: pointer;" onclick="nth3()" id="close-btn3"><i class="far fa-times-circle"></i></a>
               
                 </td>
                 <td><img src="asset/img/products/f3.jpg" alt=""></td>
                 <td>Cotton Best T-shirts</td>
-                <td>$101</td>
-                <td><input type="number" value="1" id=""></td>
-                <td>$101</td>
+                <td>299</td>
+                <td><input type="number" value="1" id="productN3"></td>
+                <td id="update3">299</td>
               </tr>
             </tbody>
         </table>
@@ -100,8 +100,8 @@
       <div class="coupon">
         <h3>Apply Coupon</h3>
         <div>
-          <input type="text" placeholder="Enter Coupon Code">
-          <button class="normal">Apply</button>
+          <input type="text" placeholder="Enter Coupon Code" id="input">
+          <button id="normal">Apply</button>
         </div>
       </div>
       <!-- total -->
@@ -110,15 +110,19 @@
         <table>
           <tr>
             <td>Cart Subtotal</td>
-            <td>$232</td>
+            <td id="final-value">1297</td>
           </tr>
           <tr>
             <td>Shipping</td>
             <td>Free</td>
           </tr>
+          <tr id="sp-coupon">
+            <td>Offer from <span> Preenu Ma'am</span></td>
+            <td>70% off</td>
+          </tr>
           <tr>
             <td><strong>Total</strong></td>
-            <td><strong>$335</strong></td>
+            <td><strong id="offer">1297</strong></td>
           </tr>
         </table>
         <a href="payment.html"><button>Proceed to checkout</button></a>

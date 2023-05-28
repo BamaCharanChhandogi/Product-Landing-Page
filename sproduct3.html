@@ -32,7 +32,7 @@
           <li>
             <a href="cart.html" id="lg-bag"
               ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            ></a><span id="cart-item">0</span>
           </li>
           <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
         </ul>
@@ -98,7 +98,7 @@
           <option value="">XL</option>
         </select>
         <input type="number" value="1" />
-        <button id="btn">Add To Cart</button>
+        <button id="btn" class="btnShop">Add To Cart</button>
         <h4>Product Details</h4>
         <p>Price: $19.99</p>
         <p>Country of Origin: India</p>
@@ -133,8 +133,8 @@
         <h2>New Collection</h2>
         <h4>Summer Collection New Modern Shirt</h4>
         <div class="pro-container">
-          <div class="pro" onclick="window.location.href='sproduct1.html';">
-            <img src="asset/img/products/n1.jpg" alt="" />
+          <div class="pro">
+            <img src="asset/img/products/n1.jpg" alt="" onclick="window.location.href='sproduct1.html';" />
             <div class="dis">
               <span>Adidas</span>
               <h5>Lorem ipsum dolor sit amet.</h5>
@@ -148,8 +148,8 @@
             </div>
             <a class="btnShop"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
-          <div class="pro" onclick="window.location.href='sproduct2.html';">
-            <img src="asset/img/products/n2.jpg" alt="" />
+          <div class="pro">
+            <img src="asset/img/products/n2.jpg" alt="" onclick="window.location.href='sproduct2.html';" />
             <div class="dis">
               <span>Adidas</span>
               <h5>Lorem ipsum dolor sit amet.</h5>
@@ -163,8 +163,8 @@
             </div>
             <a class="btnShop"><i class="fa-solid fa-cart-shopping cart"></i></a>
           </div>
-          <div class="pro" onclick="window.location.href='sproduct3.html';">
-            <img src="asset/img/products/n3.jpg" alt="" />
+          <div class="pro">
+            <img src="asset/img/products/n3.jpg" alt="" onclick="window.location.href='sproduct3.html';" />
             <div class="dis">
               <span>Adidas</span>
               <h5>Lorem ipsum dolor sit amet.</h5>
@@ -178,8 +178,8 @@
             </div>
             <a class="btnShop"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
-          <div class="pro" onclick="window.location.href='sproduct4.html';">
-            <img src="asset/img/products/n4.jpg" alt="" />
+          <div class="pro">
+            <img src="asset/img/products/n4.jpg" alt="" onclick="window.location.href='sproduct4.html';" />
             <div class="dis">
               <span>Adidas</span>
               <h5>Lorem ipsum dolor sit amet.</h5>
@@ -302,10 +302,7 @@
             mainImg.src="https://img.muji.net/img/item/4550344729861_01_1260.jpg";
         });
 
-        // button
-        document.getElementById('btn').addEventListener('click',()=>{
-          alert('Order place');
-        });
     </script>
+    <script src="asset/script.js"></script>
   </body>
 </html>
