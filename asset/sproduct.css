@@ -1,0 +1,20 @@
+/* Media query */
+@media (max-width: 799px) {
+  #sm-banner .banner-box {
+    display: none;
+  }
+  #product-details .single-pro-img {
+    width: 50%;
+  }
+  #product-details .single-pro-details {
+    width: 50%;
+  }
+  #product-details p{
+    display: inline;
+    text-align: justify;
+  }
+  
+  #product-details .small-img-col img{
+    height: 100%;
+  }
+}

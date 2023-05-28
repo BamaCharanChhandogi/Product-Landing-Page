@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        min-height: 100vh;
+      }
+
+      .container form {
+        padding: 20px;
+        width: 700px;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .container form .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .container form .row .col {
+        flex: 1 1 250px;
+      }
+
+      .container form .row .col .title {
+        font-size: 20px;
+        color: #ed0d9b;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+      .container form .row .col .inputBox {
+        margin: 15px 0;
+      }
+
+      .container form .row .col .inputBox span {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .container form .row .col .inputBox input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: none;
+      }
+
+      .container form .row .col .inputBox input:focus {
+        border: 1px solid #000;
+      }
+
+      .container form .row .col .flex {
+        display: flex;
+        gap: 15px;
+      }
+
+      .container form .row .col .flex .inputBox {
+        margin-top: 5px;
+      }
+      .container form .row .col .inputBox img {
+        height: 34px;
+        margin-top: 5px;
+        filter: drop-shadow(0 0 1px #000);
+      }
+
+      .container form .submit-btn {
+        
+        width: 30%;
+        padding: 12px;
+        font-size: 17px;
+        background: #fa0791;
+        color: #fff;
+        margin-top: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .container form .btn{
+        text-align: center;
+      }
+      .container form .submit-btn:hover {
+        background: #ca0f85;
+      }
+    </style>
+    <link rel="stylesheet" href="asset/style.css" />
+    <title>Ladies Corner</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <section id="header">
+      <a href="index.html"
+        ><img
+          src="asset/img/pngtree-beauty-spa-logo-design-template-woman-silhouette-logo-template-image_328588.jpg"
+          alt=""
+          class="logo"
+      /></a>
+      <nav id="nav">
+        <ul id="navbar">
+          <li><a href="index.html" id="home">Home</a></li>
+          <li><a href="shop.html" id="shop">Shop</a></li>
+          <li><a href="signup/index.html" id="shop">Sign In</a></li>
+          <li><a href="contact.html" id="contact">Contact</a></li>
+          <li>
+            <a href="cart.html" class="active" id="lg-bag"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+      </nav>
+      <div id="mobile">
+        <a href="shop.html" id="cart"
+          ><i class="fa-solid fa-cart-shopping fa-xl"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent fa-xl"></i>
+      </div>
+    </section>
+    <!-- page Header -->
+    <section id="page-header" class="about-header-c">
+      <h2>Congratulations! </h2>
+      <p>Your choice is always best</p>
+    </section>
+    <section id="payment">
+      <div class="container">
+        <form action="">
+          <div class="row">
+            <div class="col">
+              <h3 class="title">billing address</h3>
+
+              <div class="inputBox">
+                <span>full name :</span>
+                <input type="text" placeholder="john deo" />
+              </div>
+              <div class="inputBox">
+                <span>email :</span>
+                <input type="email" placeholder="example@example.com" />
+              </div>
+              <div class="inputBox">
+                <span>address :</span>
+                <input type="text" placeholder="room - street - locality" />
+              </div>
+              <div class="inputBox">
+                <span>city :</span>
+                <input type="text" placeholder="mumbai" />
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>state :</span>
+                  <input type="text" placeholder="india" />
+                </div>
+                <div class="inputBox">
+                  <span>zip code :</span>
+                  <input type="text" placeholder="123 456" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <h3 class="title">payment</h3>
+
+              <div class="inputBox">
+                <span>cards accepted :</span>
+                <img src="asset/img/card_img.png" alt="" />
+              </div>
+              <div class="inputBox">
+                <span>name on card :</span>
+                <input type="text" placeholder="mr. john deo" />
+              </div>
+              <div class="inputBox">
+                <span>credit card number :</span>
+                <input type="number" placeholder="1111-2222-3333-4444" />
+              </div>
+              <div class="inputBox">
+                <span>exp month :</span>
+                <input type="text" placeholder="january" />
+              </div>
+
+              <div class="flex">
+                <div class="inputBox">
+                  <span>exp year :</span>
+                  <input type="number" placeholder="2022" />
+                </div>
+                <div class="inputBox">
+                  <span>CVV :</span>
+                  <input type="text" placeholder="1234" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <input type="submit" value="Pay" class="submit-btn" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer id="footer" class="section-p1 section-m1">
+      <div class="col">
+        <img
+          src="asset/img/pngtree-beauty-spa-logo-design-template-woman-silhouette-logo-template-image_328588.jpg"
+          alt=""
+        />
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Moyna, West Bengal,India</p>
+        <p><strong>Phone:</strong> 6295474539</p>
+        <p><strong>Hours:</strong> 9:00-17:00, Mon-Fri</p>
+        <!-- <h4>Follow Us</h4> -->
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <p>About us</p>
+        <p>Delivery Information</p>
+        <p>Privacy Policy</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <p>Sign In</p>
+        <p>View Cart</p>
+        <p>Track My Order</p>
+        <p>help</p>
+      </div>
+      <div class="col payment">
+        <h4>Install App</h4>
+        <p>from App Store or Google Play</p>
+        <div class="box">
+          <div class="box-1">
+            <a
+              href="https://www.apple.com/in/?afid=p238%7Cs6Ww8AeKv-dc_mtid_187079nc38483_pcrid_653909215862_pgrid_112258962227_pntwk_g_pchan__pexid__&cid=aos-IN-kwgo-brand--slid---product-"
+              ><i class="fa-brands fa-apple"></i
+            ></a>
+            <h6>Download on the App Store</h6>
+            <h3>App Store</h3>
+          </div>
+          <div class="box-2">
+            <a
+              href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Jul0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Jul0121-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700058906718334_creativeid_480977734745_device_c&gclid=Cj0KCQjwjryjBhD0ARIsAMLvnF9g6xaAqw-frJsUZy6kWpMX08frAULCc4_4uHyLXN0HtHZBHBXfqsQaAusKEALw_wcB&gclsrc=aw.ds"
+              ><i class="fa-solid fa-mobile"></i
+            ></a>
+            <h6>Download on the App Store</h6>
+            <h3>App Store</h3>
+          </div>
+        </div>
+        <p>Secure Payment GateWay</p>
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-cc-visa fa-xl"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa-brands fa-cc-mastercard fa-xl"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="asset/script.js"></script>
+  </body>
+</html>
