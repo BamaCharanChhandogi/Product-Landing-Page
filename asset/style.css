@@ -126,8 +126,8 @@ body {
   /* font-size: 18px; */
   font-weight: 700;
   line-height: 1.8;
-  width: 28px;
-  height: 28px;
+  width: 25px;
+  height: 25px;
   border: 1px solid rgb(249, 247, 247);
   background-color: #ee0983;
   color: #0b0a0a;
@@ -176,6 +176,15 @@ body {
     0px 0px 100px #e01287;
   transition: 1.5s ease;
 }
+/* title */
+#title h3{
+  font-size: 30px;
+  color: #ed0b8b;
+  left: 30rem;
+  padding: 10px;
+  position: absolute;
+    margin-top: 10px;
+}
 /* feature Section */
 #feature {
   display: flex;
@@ -196,7 +205,7 @@ body {
 #feature .fe-box {
   width: 180px;
   padding: 25px 15px;
-  margin: 15px 0px;
+  margin: 20px 0px;
   text-align: center;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #e01287;
