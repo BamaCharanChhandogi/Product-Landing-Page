@@ -14,16 +14,6 @@ if(close){
         document.getElementById('close').style.display="none";
     });
 }
-// pop up menu
-setTimeout(myGreeting, 3000);
-
-function myGreeting() {
-  document.getElementById('timeoutbanner').style.display='flex';
-}
-
-document.getElementById('closeBtn').addEventListener('click',()=>{
-    document.getElementById('timeoutbanner').style.display='none';
-});
 // Shop page 
 // button working
 let count=0;
@@ -36,6 +26,17 @@ document.querySelectorAll(".btnShop").forEach(box =>
 
     })
   )
+
+// pop up menu
+setTimeout(myGreeting, 3000);
+
+function myGreeting() {
+  document.getElementById('timeoutbanner').style.display='flex';
+}
+
+document.getElementById('closeBtn').addEventListener('click',()=>{
+    document.getElementById('timeoutbanner').style.display='none';
+});
 
 let input =document.getElementById('input');
 let couponOff=document.getElementById('offer');  // Total value in cart
