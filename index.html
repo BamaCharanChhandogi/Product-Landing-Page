@@ -28,7 +28,11 @@
           <li><a href="shop.html" id="shop">Shop</a></li>
           <li><a href="signup/index.html" id="about">Sign In</a></li>
           <li><a href="contact.html" id="about">Contact</a></li>
-          <li><a href="cart.html" id="lg-bag"><i class="fa-solid fa-cart-shopping"></i></a><span id="cart-item">0</span></li>
+          <li>
+            <a href="cart.html" id="lg-bag"
+              ><i class="fa-solid fa-cart-shopping"></i></a
+            ><span id="cart-item">0</span>
+          </li>
           <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
         </ul>
       </nav>
@@ -78,8 +82,8 @@
       </div>
     </section>
     <!-- pop up -->
-    <div class="popupbanner" id="timeoutbanner" >
-        <a href="#" id="closeBtn"><i class="fa-solid fa-xmark"></i></a>
+    <div class="popupbanner" id="timeoutbanner">
+      <a href="#" id="closeBtn"><i class="fa-solid fa-xmark"></i></a>
       <h4>Repair Service</h4>
       <h2>Upto- <span>70% offer</span> All T-shirt</h2>
       <button>Explore More</button>
@@ -405,7 +409,9 @@
       </div>
       <div class="col">
         <h4>My Account</h4>
-        <p><a href="signup/index.html" style="text-decoration: none;">Sign In</a></p>
+        <p>
+          <a href="signup/index.html" style="text-decoration: none">Sign In</a>
+        </p>
         <p>View Cart</p>
         <p>Track My Order</p>
         <p>help</p>
@@ -442,6 +448,16 @@
         </ul>
       </div>
     </footer>
+    <script>
+      // pop up menu
+      setTimeout(myGreeting, 3000);
+      function myGreeting() {
+        document.getElementById("timeoutbanner").style.display = "flex";
+      }
+      document.getElementById("closeBtn").addEventListener("click", () => {
+        document.getElementById("timeoutbanner").style.display = "none";
+      });
+    </script>
     <script src="asset/script.js"></script>
   </body>
 </html>

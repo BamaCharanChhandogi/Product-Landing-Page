@@ -26,18 +26,6 @@ document.querySelectorAll(".btnShop").forEach(box =>
 
     })
   )
-
-// pop up menu
-setTimeout(myGreeting, 3000);
-
-function myGreeting() {
-  document.getElementById('timeoutbanner').style.display='flex';
-}
-
-document.getElementById('closeBtn').addEventListener('click',()=>{
-    document.getElementById('timeoutbanner').style.display='none';
-});
-
 let input =document.getElementById('input');
 let couponOff=document.getElementById('offer');  // Total value in cart
 let final=document.getElementById('final-value');  // subtotal value in cart 
