@@ -34,8 +34,8 @@
         </ul>
       </nav>
       <div id="mobile">
-        <a href="shop.html" id="cart"
-          ><i class="fa-solid fa-cart-shopping fa-xl"></i
+        <a href="cart.html" id="cart"
+          ><i class="fa-solid fa-cart-shopping fa-xxl"></i
         ></a>
         <i id="bar" class="fas fa-outdent fa-xl"></i>
       </div>
@@ -95,12 +95,18 @@
             </tbody>
         </table>
     </section>
+    <!-- pop up -->
+    <div class="popupbanner" id="Contacttimeoutbanner">
+      <a href="#" id="closeBtn"><i class="fa-solid fa-xmark"></i></a>
+      <h4>Congratulations! </h4>
+      <h2>You got 70% off</h2>
+    </div>
     <!-- coupon and Total -->
     <section id="cart-add" class="section-p1">
       <div class="coupon">
         <h3>Apply Coupon</h3>
         <div>
-          <input type="text" placeholder="Enter Coupon Code" id="input">
+          <input type="text" placeholder="#FEE" id="input">
           <button id="normal">Apply</button>
         </div>
       </div>
@@ -201,6 +207,12 @@
         </ul>
       </div>
     </footer>
+    <script>
+    document.getElementById("closeBtn").addEventListener("click", (e) => {
+      document.getElementById("Contacttimeoutbanner").style.display = "none";
+      e.preventDefault();
+    });
+    </script>
     <script src="asset/script.js"></script>
   </body>
 </html>

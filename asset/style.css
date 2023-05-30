@@ -1104,6 +1104,28 @@ margin-right: 15px;
   font-weight: 500;
   border: none;
 }
+/* popUp menu */
+#Contacttimeoutbanner{
+  top: 120%;
+  background-image: none;
+  background-color: #08dcaa;
+  width: 40%;
+  height: 14vh;
+  display: none;
+  justify-content: flex-end;
+}
+#Contacttimeoutbanner h2{
+  margin-top: -18px;
+  font-size: 25px;
+  padding: 0;
+  display: block;
+}
+#Contacttimeoutbanner h4{
+  padding: 10px;
+}
+#Contacttimeoutbanner a{
+  top: 23%;
+}
 
 /* .....................
 
@@ -1243,10 +1265,15 @@ margin-right: 15px;
     top: -19%;
     left: 6%;
   }
+  #Contacttimeoutbanner{
+    display: none !important;
+  }
   /* ...subproduct1 */
   
   /* ...cart section.. */
-
+  #cart{
+    overflow-x: auto;
+  }
 }
 
 /*  Media Query For Mobile*/
@@ -1347,6 +1374,18 @@ margin-right: 15px;
 #form-details .people span{
   margin: 0;
 }
+/* cart section*/
+#cart-add{
+flex-direction: column;
+}
+.coupon{
+  width: 100%;
+}
+.total{
+  width: 100%;
+  padding: 30px;
+}
+/* other */
 #title{
   display: none;
 }

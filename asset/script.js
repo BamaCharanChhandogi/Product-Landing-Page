@@ -60,7 +60,7 @@ document.getElementById('productN3').addEventListener('click',()=>{
 //for coupon code
 document.getElementById('normal').addEventListener('click',()=>{
     if(input.value=='#FEE'){
-        alert('Congratulations! You got 70% off');
+        document.getElementById('Contacttimeoutbanner').style.display='flex';
         couponOff.innerText='910';
         document.getElementById('sp-coupon').style.display='contents';
     }
