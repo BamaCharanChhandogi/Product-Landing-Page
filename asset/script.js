@@ -14,6 +14,16 @@ if(close){
         document.getElementById('close').style.display="none";
     });
 }
+// pop up menu
+setTimeout(myGreeting, 3000);
+
+function myGreeting() {
+  document.getElementById('timeoutbanner').style.display='flex';
+}
+
+document.getElementById('closeBtn').addEventListener('click',()=>{
+    document.getElementById('timeoutbanner').style.display='none';
+});
 // Shop page 
 // button working
 let count=0;
