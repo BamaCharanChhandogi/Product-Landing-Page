@@ -453,9 +453,11 @@
       setTimeout(myGreeting, 3000);
       function myGreeting() {
         document.getElementById("timeoutbanner").style.display = "flex";
+        document.getElementById('main').style.filter="blur(6px)";
       }
       document.getElementById("closeBtn").addEventListener("click", () => {
         document.getElementById("timeoutbanner").style.display = "none";
+        document.getElementById('main').style.filter="none";
       });
     </script>
     <script src="asset/script.js"></script>
