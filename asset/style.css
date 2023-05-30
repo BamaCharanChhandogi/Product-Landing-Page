@@ -1231,6 +1231,18 @@ margin-right: 15px;
   #contact-details .details li P{
     width: 50%;
   }
+  #title{
+    display: none;
+  }
+  /* pop */
+  .popupbanner h4{
+    font-size: 40px;
+  }
+  .popupbanner a{
+    font-size: 35px;
+    top: -19%;
+    left: 6%;
+  }
   /* ...subproduct1 */
   
   /* ...cart section.. */
@@ -1334,4 +1346,16 @@ margin-right: 15px;
 }
 #form-details .people span{
   margin: 0;
+}
+#title{
+  display: none;
+}
+.popupbanner{
+  width: 90%;
+}
+.popupbanner a{
+  font-size: 45px;
+  top: -17%;
+  left: 6%;
+}
 }
